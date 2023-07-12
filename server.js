@@ -44,7 +44,7 @@ app.get('/api/quotes', async (req, res) => {
   
       res.json(quote);
     } catch (error) {
-      console.error('Error fetching quotes:', error);
+      console.error('Error fetching quotes:',  error.response.data);
       res.status(500).json({ error: 'Failed to fetch quotes' });
     }
   });
