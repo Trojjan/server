@@ -6,7 +6,7 @@ app.use(cors());
 const port = process.env.PORT || 5000;
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = process.env.MONGODB_URI;
+const uri = "mongodb+srv://admin-Ammar:0958271151@cluster0.nwycpvo.mongodb.net/?retryWrites=true&w=majority";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
