@@ -21,7 +21,7 @@ async function run() {
 }
 
 run().catch(console.dir);
-
+console.log(process.env.MONGODB_URI);
 app.get('/api/quotes', async (req, res) => {
   try {
     const db = client.db("quotesgen");
