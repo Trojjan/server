@@ -21,7 +21,7 @@ async function run() {
 }
 
 run().catch(console.dir);
-console.log(process.env.MONGODB_URI);
+console.log(mongodb+srv://admin-Ammar:0958271151@cluster0.nwycpvo.mongodb.net/?retryWrites=true&w=majority);
 app.get('/api/quotes', async (req, res) => {
   try {
     const db = client.db("quotesgen");
